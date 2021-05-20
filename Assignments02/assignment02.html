@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border: none;
+  width: 800px;
+  text-align: center;
+}
+table th{
+  width: 20%;
+  height: 30px;
+}
+.khung{
+  margin: 0 auto;
+  width: 100%;
+}
+.khung .khungnho{
+  width: 30%;
+  margin: auto;
+  background: rgba(131, 119, 233, 0.192);
+  margin-bottom: 50px;
+}
+.khungnho .a {
+ margin-left: 15%;  
+ margin-right: 50px;
+
+}
+.khungnho .b {
+ margin-left: 15%;  
+ margin-right: 33px;
+}
+.khungnho .c {
+ margin-left: 15%;  
+ margin-right: 71px;
+}
+.khungnho .d {
+ margin-left: 15%;  
+ margin-right: 25px;
+}
+.khungnho .e {
+ margin-left: 45%;  
+ margin-right: 25px;
+ margin-top: 15px;
+}
+#myTable{
+  margin-left: 350px;
+}
+
+</style>
+</head>
+<body>
+  <form class="khung">
+    <fieldset class="khungnho">
+        <label class="a" for="">Số tiền vay</label><input type="number" id="money"><label for="VND">VND</label><br>
+        <label class="b" for="">Thời gian vay</label><input type="number" id="months"><label for="VND">Tháng</label><br>
+        <label class="c" for="">Lãi suất</label><input type="number" id="lai"><label for="VND">%</label><br>
+        <label class="d" for="">Ngày giải ngân</label><input type="date" id="date" min="2000-01-02 max="2020-12-31"><label for="VND"></label><br>
+        <button class="e" type="button" onclick="myFunction()">Tính</button>
+    </fieldset>
+</form>
+
+
+<table id="myTable" border="1">
+    <thead style="background-color: rgba(164, 240, 93, 0.192);">
+        <tr>
+          <th id="kiTraNo" colspan="2">Kỳ trả nợ</th>
+          <th id="soGoc" >Số góc còn lại</th>
+          <th id="goc">Gốc</th>
+          <th id="lai">Lãi</th>
+          <th id="tong">Tổng gốc + lãi</th> 
+        </tr>
+    </thead>
+
+</table>
+<br>
+<script src="assignment02.js"></script>
+</body>
+</html>
