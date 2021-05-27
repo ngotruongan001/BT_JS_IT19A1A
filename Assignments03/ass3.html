@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI';
+    display: flex;
+    gap: 5rem;
+    padding: 0 5rem;
+    overflow: hidden;
+}
+/* h3{
+    margin: 1rem 0;
+    background: rgb(26, 84, 170);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+} */
+.student,.table-name{
+    margin: 0;
+    display: flex;
+    border: 1px solid rgb(70, 40, 40);
+    box-sizing: border-box;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+    /* background: #4f96b4; */
+    border: none;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.student p, .table-name p{
+    width: 15%;
+    text-align: center;
+}
+.danh-sach{
+    width: 70%;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 5rem;
+}
+.filter button{
+    height: 50px;
+    font-size: 17px;
+    width: auto;
+    /* background-color: rgb(34, 98, 194); */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    padding: 0.1rem 1rem;
+    transition: all .25s;
+    border-radius: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="danh-sach">
+        <h3>DANH SÁCH SINH VIÊN</h3>
+        <div class="table-name">
+            <p>Họ và tên</p>
+            <p>Điểm trung bình</p>
+            <p>Giới tính</p>
+            <p>Điểm Lý</p>
+            <p>Điểm Toán</p>
+        </div>
+        <div class="show-class">
+        </div>
+    </div>
+    <div class="filter">
+        <button class="filter-btn">Hiển thị danh sách ban đầu</button>
+        <button class="filter-btn">Sắp xếp từ bé đến lớn</button>
+        <button class="filter-btn">Sắp xếp từ lớn đến bé</button>
+        <button class="filter-btn">Lọc sinh viên nữ có điểm lớn hơn 5</button>
+        <button class="filter-btn">Lọc sinh viên có điểm toán hoặc lý lớn hơn 8</button>
+        <button class="filter-btn">Lọc sinh viên có điểm toán cao nhất và thấp nhất</button>
+        <button class="filter-btn">Xóa sinh viên có điểm tích lũy bằng 0</button>
+        <button class="filter-btn">Thêm mới 3 sinh viên</button>
+    </div>
+
+    <script src="ass3.js"></script>
+</body>
+</html>
+
