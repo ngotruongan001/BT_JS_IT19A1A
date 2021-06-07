@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(134, 209, 127);
+            border: 2px solid red;
+            width: 15%;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .a{
+            margin-left: 60px;
+        }
+        #height{
+            margin-left: 30px;
+        }
+        #weight{
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+        #btn{
+            background: rgb(152, 189, 236);
+            margin-bottom: 10px;
+            margin-left: 70px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1>BMI Calculator</h1>
+
+        <!-- Option for providing height
+            and weight to the user-->
+        <p class="a">Height (in cm)</p>
+
+        <input type="number" id="height">
+
+        <p class="a">Weight (in kg)</p>
+
+        <input type="number" id="weight">
+
+        <button id="btn" onclick= check()>Calculate</button>
+
+        
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
