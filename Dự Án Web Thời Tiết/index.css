@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    color: white;
+    background: rgba(39, 38, 38, 0.212);
+    width: 400px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    margin-left: 11%;
+}
+
+
+.container2  {
+    color: white;
+    background: rgba(39, 38, 38, 0.212);
+    width: 25%;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    margin-left: 1%;
+}
+.container2:hover{
+    background: rgba(26, 25, 25, 0.425);
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+
+.container:hover{
+    background: rgba(26, 25, 25, 0.425);
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+.search-bar {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.search-icon {
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+}
+
+.microphone {
+    cursor: pointer;
+}
+
+.microphone .recording-icon {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #e22d2d;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite linear;
+}
+
+.microphone.recording .recording-icon {
+    display: inline-block;
+}
+
+.microphone.recording .fa-microphone {
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 3px 0 rgba(173, 0, 0, .3);
+    }
+    65% {
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, .3);
+    }
+    100% {
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, 0);
+    }
+}
+
+
+
+#search-input {
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+}
+
+#search-input::placeholder {
+    color: rgb(206,206,206);
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 80px 50px;
+}
+
+.city-name {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.weather-state {
+    font-size: 15px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+    
+}
+
+.temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+    
+    
+}
+
+.additional-section {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+    
+}
+
+.additional-section .row {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.additional-section .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.additional-section .item .label {
+    font-weight: bold;
+}
+
+*{
+   
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    
+        background: #FFA17F;
+        background: -webkit-linear-gradient(to right, #1662a0, #FFA17F);
+        background: linear-gradient(to right, #165d97, #FFA17F);
+  }
+  #dong_ho h2{
+    position: relative;
+    display:block;
+    color:#fff;
+    text-align: center;
+    margin:20px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+#dong_ho{
+    text-align: center;
+}
+#dong_ho #thoi_gian{
+    display:flex;
+    margin-left: 30px;
+}
+#dong_ho #thoi_gian div{
+    position: relative;
+    margin: 0 5px;
+}
+#dong_ho #thoi_gian div span{
+    position: relative;
+    display:block;
+    width:100px;
+    height: 80px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index:3;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    border-radius:4px 4px 0px 0px;
+    border: none;
+}
+#dong_ho #thoi_gian span:nth-child(2){
+    height: 65px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    z-index: 2;
+    box-shadow: none;
+    background:#127fd6;
+    text-transform: uppercase;
+    border-radius:0px 0px 4px 4px;
+}
+#dong_ho #thoi_gian div:last-child span {
+    background: #FFA17F;
+}
+#dong_ho #thoi_gian div:last-child span:nth-child(2) {
+    background: #e77045;
+}
+#dong_ho .a {
+    margin-left: 200px;
+}
+
+
+
+#dong_ho #ngay_thang{
+    display:flex;
+    margin-left: 30px;
+}
+#dong_ho #ngay_thang div{
+    position: relative;
+    margin: 0 5px;
+}
+#dong_ho #ngay_thang div span{
+    position: relative;
+    display:block;
+    width:100px;
+    height: 80px;
+    background: #383a3aa9;
+    color: #fff;
+    font-weight: 100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    z-index:3;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    border-radius:4px 4px 0px 0px;
+}
+#dong_ho #ngay_thang span:nth-child(2){
+    height: 65px;
+    width: 100px;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    z-index: 2;
+    box-shadow: none;
+    background: #111111a6;
+    text-transform: uppercase;border-radius:0px 0px 4px 4px;
+    
+}
+#dong_ho #ngay_thang div:last-child span {
+    background: #383a3aa9;
+}
+#dong_ho #ngay_thang div:last-child span:nth-child(2) {
+    background: #111111a6;
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+ /* ẩn hình ảnh cho phần tử slideshow */
+  .mySlides {
+    display: none;
+  }
+ /* thiết kế nút mũi tên*/
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(56, 53, 53, 0.747);
+  }
+ /* thiết kế nút mũi tên next nằm phía bên phải */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+ /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ /* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+  .text {
+    color: #1f1919;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ /* Thiết lập style cho số hiển thị của phần tử */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ /* thiết lập style  nút tròn điều khiển*/
+  .dot {
+    
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(175, 32, 32);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+ .active, .dot:hover {
+    background-color: #717171;
+  }
+ /* tạo hiệu ứng chuyển động fade */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
